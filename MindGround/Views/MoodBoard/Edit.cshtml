@@ -1,0 +1,36 @@
+﻿@model MoodBoard
+
+<form method="post" asp-action="Edit">
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary"> Edit Moodboard</h2>
+            <hr/>
+        </div>
+        <div asp-validation-summary="All"></div>
+        <div class="mb-3">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" class="form-control"/>
+            <span asp-validation-for="Name" class="text-danger"></span>
+         </div>
+          <div class="mb-3">
+            <label asp-for="Pros"></label>
+            <input asp-for="Pros" class="form-control"/>
+            <span asp-validation-for="Pros" class="text-danger"></span>
+         </div>
+          <div class="mb-3">
+            <label asp-for="Cons"></label>
+            <input asp-for="Cons" class="form-control"/>
+            <span asp-validation-for="Cons" class="text-danger"></span>
+          </div>
+
+        <button type="submit" class="btn btn-primary" style="width:150px"> Update </button>
+        <a asp-controller="MoodBoard" asp-action="Index" class="btn btn-secondary" style="width:150px">
+            Back to List
+        </a>
+    </div>
+</form>
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial"/>
+    }
+}

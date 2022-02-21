@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAAodUgWux2UaNMcDd3Pzs0wAAAAACAAAAAAAQZgAAAAEAACAAAACyzJ9JDVx8R/ewDE/Ukzb2LhSJptajZcf7T+brWaQXjgAAAAAOgAAAAAIAACAAAAD3Qv9CicHjf/FneqyTAMPXc1qf0L2bARQTh5XOSjF06IAAAAD3DnCZ05ivoM+7zfWRlj+Ex1ijq20b8NQTGHO91NuAZrAvcxvMKC2HeBXn5xl0VGl5zRouqxG/aLcBjEa/+eMUvm0Cjothu3uaNGSWnmwH3OxjYB/pwxFPvwc95ckTRL7HB+Kyrzj0SucicgsGdJUiew8uM+sFKP7im6cD8wtH/kAAAAC/xB17mXi5+Y780yhKpKKzAUdcI9LinPljr/FbZnxYXbhJahEC2tfgucpG7II0qI2/eVdlAMD3gVAu2y0jzWIQ</EncryptedPassword>
+    <History>True|2022-02-21T09:48:03.4646868Z;False|2022-02-21T15:15:57.8192556+05:30;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Server=tcp:mindground.database.windows.net,1433%3bInitial Catalog=Mindground%3bPersist Security Info=False%3bUser ID=admin_mindground%3bPassword=Vidisha%40123%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="MindGround.Controllers.ApplicationDBContext">
+      <Value>Server=tcp:mindground.database.windows.net,1433%3bInitial Catalog=Mindground%3bPersist Security Info=False%3bUser ID=admin_mindground%3bPassword=Vidisha%40123%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>
